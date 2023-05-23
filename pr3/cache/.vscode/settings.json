@@ -1,0 +1,28 @@
+{
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/webproxy",
+      "binaryArgs": [],
+      "stopAtEntry": true,
+    },
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/webproxy_noasan",
+      "binaryArgs": [],
+      "stopAtEntry": true,
+    },
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/simplecached",
+      "binaryArgs": [],
+      "stopAtEntry": true
+    },
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/simplecached_noasan",
+      "binaryArgs": [],
+      "stopAtEntry": true
+    },
+  ]
+}
