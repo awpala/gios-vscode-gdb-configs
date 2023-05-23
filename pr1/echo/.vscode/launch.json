@@ -1,0 +1,60 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    /* ------ SERVER CONFIG ------ */
+    {
+      "name": "Echo Server",
+      "type": "cppdbg",
+      "preLaunchTask": "clean & build all",
+      "request": "launch",
+      "program": "${workspaceFolder}/echoserver",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        },
+      ]
+    },
+    /* ------ CLIENT CONFIG ------ */
+    {
+      "name": "Echo Client",
+      "type": "cppdbg",
+      "preLaunchTask": "clean & build all",
+      "request": "launch",
+      "program": "${workspaceFolder}/echoclient",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        },
+      ]
+    },
+  ]
+}

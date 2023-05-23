@@ -1,0 +1,16 @@
+{
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/echoserver",
+      "binaryArgs": [],
+      "stopAtEntry": true,
+    },
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/echoclient",
+      "binaryArgs": [],
+      "stopAtEntry": true,
+    },
+  ]
+}

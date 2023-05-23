@@ -1,0 +1,16 @@
+{
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/transferserver",
+      "binaryArgs": [],
+      "stopAtEntry": true,
+    },
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/transferclient",
+      "binaryArgs": [],
+      "stopAtEntry": true,
+    },
+  ]
+}

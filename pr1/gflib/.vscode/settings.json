@@ -1,0 +1,28 @@
+{
+  "makefile.launchConfigurations": [
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/gfserver_main",
+      "binaryArgs": [],
+      "stopAtEntry": true,
+    },
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/gfserver_main_noasan",
+      "binaryArgs": [],
+      "stopAtEntry": true,
+    },
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/gfclient_download",
+      "binaryArgs": [],
+      "stopAtEntry": true,
+    },
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/gfclient_download_noasan",
+      "binaryArgs": [],
+      "stopAtEntry": true,
+    },
+  ]
+}
