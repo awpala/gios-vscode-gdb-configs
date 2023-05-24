@@ -3,14 +3,59 @@
   // Hover to view descriptions of existing attributes.
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "Transfer Server & Client",
+      "configurations": [
+        "Transfer Server",
+        "Transfer Client",
+      ],
+      // "preLaunchTask": "clean & build all",
+      "stopAll": false,
+    },
+    {
+      "name": "Transfer Server & Client (No Asan)",
+      "configurations": [
+        "Transfer Server (No Asan)",
+        "Transfer Client (No Asan)",
+      ],
+      // "preLaunchTask": "clean & build all",
+      "stopAll": false,
+    },
+  ],
   "configurations": [
     /* ------ SERVER CONFIG ------ */
     {
       "name": "Transfer Server",
       "type": "cppdbg",
-      "preLaunchTask": "clean & build all",
+      "preLaunchTask": "clean & build server",
       "request": "launch",
       "program": "${workspaceFolder}/transferserver",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        },
+      ]
+    },
+    {
+      "name": "Transfer Server (No Asan)",
+      "type": "cppdbg",
+      "preLaunchTask": "clean & build server (noasan)",
+      "request": "launch",
+      "program": "${workspaceFolder}/transferserver_noasan",
       "args": [],
       "stopAtEntry": true,
       "cwd": "${workspaceFolder}",
@@ -34,7 +79,7 @@
     {
       "name": "Transfer Client",
       "type": "cppdbg",
-      "preLaunchTask": "clean & build all",
+      "preLaunchTask": "clean & build client",
       "request": "launch",
       "program": "${workspaceFolder}/transferclient",
       "args": [],
@@ -56,5 +101,30 @@
         },
       ]
     },
-  ]
+    {
+      "name": "Transfer Client (No Asan)",
+      "type": "cppdbg",
+      "preLaunchTask": "clean & build client (noasan)",
+      "request": "launch",
+      "program": "${workspaceFolder}/transferclient_noasan",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        },
+      ]
+    },
+  ],
 }
