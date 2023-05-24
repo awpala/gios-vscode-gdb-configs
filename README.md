@@ -12,8 +12,8 @@ This repository contains VS Code debugger configuration files for GIOS projects,
 
 # Project 3 ← .vscode/ placed in respective sub-parts subdirectories
 /pr3
-  /cache
   /server
+  /cache
 
 # Project 4 ← .vscode/ placed at top-level directory of project (for BOTH parts)
 /pr4
