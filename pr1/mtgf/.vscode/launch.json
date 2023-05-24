@@ -3,12 +3,42 @@
   // Hover to view descriptions of existing attributes.
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
+  "compounds": [
+    {
+      "name": "MTGF Server & Client",
+      "configurations": [
+        "MTGF Server - Main",
+        "MTGF Client - Download",
+      ],
+      // "preLaunchTask": "clean & build all",
+      "stopAll": true,
+      "presentation": {
+        "hidden": false,
+        "group": "01 - all",
+        "order": 1
+      },      
+    },
+    {
+      "name": "MTGF Server & Client (No Asan)",
+      "configurations": [
+        "MTGF Server - Main (No Asan)",
+        "MTGF Client - Download (No Asan)",
+      ],
+      // "preLaunchTask": "clean & build all",
+      "stopAll": true,
+      "presentation": {
+        "hidden": false,
+        "group": "01 - all",
+        "order": 2
+      },
+    },
+  ],
   "configurations": [
     /* ------ SERVER CONFIG ------ */
     {
-      "name": "GF Server - Main",
+      "name": "MTGF Server - Main",
       "type": "cppdbg",
-      "preLaunchTask": "clean & build all",
+      "preLaunchTask": "clean & build server",
       "request": "launch",
       "program": "${workspaceFolder}/gfserver_main",
       "args": [],
@@ -16,6 +46,11 @@
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
+      "presentation": {
+        "hidden": false,
+        "group": "02 - individual",
+        "order": 1
+      },
       "MIMode": "gdb",
       "setupCommands": [
         {
@@ -31,9 +66,9 @@
       ]
     },
     {
-      "name": "GF Server - Main (No Asan)",
+      "name": "MTGF Server - Main (No Asan)",
       "type": "cppdbg",
-      "preLaunchTask": "clean & build all (noasan)",
+      "preLaunchTask": "clean & build server (noasan)",
       "request": "launch",
       "program": "${workspaceFolder}/gfserver_main_noasan",
       "args": [],
@@ -41,6 +76,11 @@
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
+      "presentation": {
+        "hidden": false,
+        "group": "03 - individual (noasan)",
+        "order": 1
+      },
       "MIMode": "gdb",
       "setupCommands": [
         {
@@ -57,9 +97,9 @@
     },
     /* ------ CLIENT CONFIG ------ */
     {
-      "name": "GF Client - Download",
+      "name": "MTGF Client - Download",
       "type": "cppdbg",
-      "preLaunchTask": "clean & build all",
+      "preLaunchTask": "clean & build client",
       "request": "launch",
       "program": "${workspaceFolder}/gfclient_download",
       "args": [],
@@ -67,6 +107,11 @@
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
+      "presentation": {
+        "hidden": false,
+        "group": "02 - individual",
+        "order": 2
+      },
       "MIMode": "gdb",
       "setupCommands": [
         {
@@ -82,9 +127,9 @@
       ]
     },
     {
-      "name": "GF Client - Download (No Asan)",
+      "name": "MTGF Client - Download (No Asan)",
       "type": "cppdbg",
-      "preLaunchTask": "clean & build all (noasan)",
+      "preLaunchTask": "clean & build client (noasan)",
       "request": "launch",
       "program": "${workspaceFolder}/gfclient_download_noasan",
       "args": [],
@@ -92,6 +137,11 @@
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
+      "presentation": {
+        "hidden": false,
+        "group": "03 - individual (noasan)",
+        "order": 2
+      },
       "MIMode": "gdb",
       "setupCommands": [
         {
