@@ -1,0 +1,116 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    /* ------ PART 1 ------ */
+    {
+      "name": "Part 1 - Server",
+      "type": "cppdbg",
+      "preLaunchTask": "clean & build part 1",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/dfs-server-p1",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        },
+      ]
+    },
+    {
+      "name": "Part 1 - Client",
+      "type": "cppdbg",
+      "preLaunchTask": "clean & build part 1",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/dfs-client-p1",
+      "args": [
+         // set client-side command-line args here
+        "list",
+      ],
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        },
+      ]
+    },
+    /* ------ PART 2 ------ */
+    {
+      "name": "Part 2 - Server",
+      "type": "cppdbg",
+      "preLaunchTask": "clean & build part 2",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/dfs-server-p2",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        },
+      ]
+    },
+    {
+      "name": "Part 2 - Client",
+      "type": "cppdbg",
+      "preLaunchTask": "clean & build part 2",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/dfs-client-p2",
+      "args": [
+         // set client-side command-line args here
+        "list",
+      ],
+      "stopAtEntry": true,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        },
+        {
+          "description": "Set Disassembly Flavor to Intel",
+          "text": "-gdb-set disassembly-flavor intel",
+          "ignoreFailures": true
+        },
+      ]
+    },
+  ]
+}

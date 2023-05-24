@@ -1,0 +1,36 @@
+{
+  "makefile.launchConfigurations": [
+    /* ------ PART 1 ------ */
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/bin/dfs-server-p1",
+      "binaryArgs": [],
+      "stopAtEntry": true
+    },
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/bin/dfs-client-p1",
+      "binaryArgs": [
+        // set client-side command-line args here
+        "list"
+      ],
+      "stopAtEntry": true
+    },
+    /* ------ PART 2 ------ */
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/bin/dfs-server-p2",
+      "binaryArgs": [],
+      "stopAtEntry": true
+    },
+    {
+      "cwd": "${workspaceFolder}",
+      "binaryPath": "${workspaceFolder}/bin/dfs-client-p2",
+      "binaryArgs": [
+        // set client-side command-line args here
+        "list"
+      ],
+      "stopAtEntry": true
+    },
+  ],
+}
