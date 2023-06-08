@@ -10,7 +10,6 @@
         "Echo Server",
         "Echo Client",
       ],
-      // "preLaunchTask": "clean & build all",
       "stopAll": true,
       "presentation": {
         "hidden": false,
@@ -24,7 +23,6 @@
         "Echo Server (No Asan)",
         "Echo Client (No Asan)",
       ],
-      // "preLaunchTask": "clean & build all",
       "stopAll": true,
       "presentation": {
         "hidden": false,

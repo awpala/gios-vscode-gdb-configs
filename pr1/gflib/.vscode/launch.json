@@ -10,7 +10,6 @@
         "GF Server - Main",
         "GF Client - Download",
       ],
-      // "preLaunchTask": "clean & build all",
       "stopAll": true,
       "presentation": {
         "hidden": false,
@@ -24,7 +23,6 @@
         "GF Server - Main (No Asan)",
         "GF Client - Download (No Asan)",
       ],
-      // "preLaunchTask": "clean & build all",
       "stopAll": true,
       "presentation": {
         "hidden": false,

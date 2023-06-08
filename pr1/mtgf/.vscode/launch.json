@@ -10,7 +10,6 @@
         "MTGF Server - Main",
         "MTGF Client - Download",
       ],
-      // "preLaunchTask": "clean & build all",
       "stopAll": true,
       "presentation": {
         "hidden": false,
@@ -24,7 +23,6 @@
         "MTGF Server - Main (No Asan)",
         "MTGF Client - Download (No Asan)",
       ],
-      // "preLaunchTask": "clean & build all",
       "stopAll": true,
       "presentation": {
         "hidden": false,

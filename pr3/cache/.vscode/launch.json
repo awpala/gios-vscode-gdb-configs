@@ -10,7 +10,6 @@
         "Webproxy",
         "Simplecached",
       ],
-      // "preLaunchTask": "clean & build all",
       "stopAll": true,
       "presentation": {
         "hidden": false,
@@ -24,7 +23,6 @@
         "Webproxy (No Asan)",
         "Simplecached (No Asan)",
       ],
-      // "preLaunchTask": "clean & build all",
       "stopAll": true,
       "presentation": {
         "hidden": false,

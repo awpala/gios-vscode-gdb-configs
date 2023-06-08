@@ -10,7 +10,6 @@
         "Transfer Server",
         "Transfer Client",
       ],
-      // "preLaunchTask": "clean & build all",
       "stopAll": true,
     },
     {
@@ -19,7 +18,6 @@
         "Transfer Server (No Asan)",
         "Transfer Client (No Asan)",
       ],
-      // "preLaunchTask": "clean & build all",
       "stopAll": true,
     },
   ],
