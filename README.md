@@ -7,23 +7,30 @@ This repository contains VS Code debugger configuration files for GIOS projects,
 /pr1
   ./echo
     ../.vscode
+    ..<other staff-provided files>
   ./transfer
     ../.vscode
+    ..<other staff-provided files>
   ./gflib
     ../.vscode
+    ..<other staff-provided directories & files>
   ./mtgf
     ../.vscode
+    ..<other staff-provided directories & files>
 
 # Project 3 ← .vscode/ placed in respective sub-parts subdirectories
 /pr3
   ./server
     ../.vscode
+    ..<other staff-provided files>
   ./cache
     ../.vscode
+    ..<other staff-provided directories & files>
 
 # Project 4 ← .vscode/ placed at top-level directory of project (for BOTH parts)
 /pr4
   ./.vscode
+  .<other staff-provided directories & files>
 ```
 **Note**: To use debugger configurations in VS Code, copy corresponding directory `.vscode/` to appropriate sub-part target and then open that location as a VS Code project (i.e., ***File*** → ***Open Folder***, terminal command `code /prX/<sub-part>`, or equivalent). This will add corresponding debugger configurations in view `Run and Debug` in the dropdown (i.e., for server and/or client apps, as applicable).
 
