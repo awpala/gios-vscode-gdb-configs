@@ -4,11 +4,11 @@
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
   "version": "0.2.0",
   "configurations": [
-    /* ------ SERVER CONFIG ------ */
+    /* ------ WEBPROXY CONFIG ------ */
     {
-      "name": "Web Proxy",
+      "name": "Webproxy",
       "type": "cppdbg",
-      "preLaunchTask": "clean & build all",
+      "preLaunchTask": "clean & build webproxy",
       "request": "launch",
       "program": "${workspaceFolder}/webproxy",
       "args": [],
@@ -16,6 +16,11 @@
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
+      "presentation": {
+        "hidden": false,
+        "group": "01 - individual",
+        "order": 1,
+      },
       "MIMode": "gdb",
       "setupCommands": [
         {
@@ -31,9 +36,9 @@
       ]
     },
     {
-      "name": "Web Proxy (No Asan)",
+      "name": "Webproxy (No Asan)",
       "type": "cppdbg",
-      "preLaunchTask": "clean & build all (noasan)",
+      "preLaunchTask": "clean & build webproxy (noasan)",
       "request": "launch",
       "program": "${workspaceFolder}/webproxy_noasan",
       "args": [],
@@ -41,6 +46,11 @@
       "cwd": "${workspaceFolder}",
       "environment": [],
       "externalConsole": false,
+      "presentation": {
+        "hidden": false,
+        "group": "01 - individual",
+        "order": 2,
+      },
       "MIMode": "gdb",
       "setupCommands": [
         {
